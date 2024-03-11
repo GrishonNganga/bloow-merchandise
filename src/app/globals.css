@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+  :root {
+    --background: 264 0% 100%;
+    --foreground: 264 0% 10%;
+    --card: 264 0% 100%;
+    --card-foreground: 264 0% 15%;
+    --popover: 264 0% 100%;
+    --popover-foreground: 264 95% 10%;
+    --primary: 264 100% 2.9%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 264 10% 90%;
+    --secondary-foreground: 0 0% 0%;
+    --muted: 226 10% 95%;
+    --muted-foreground: 264 0% 40%;
+    --accent: 226 10% 90%;
+    --accent-foreground: 264 0% 15%;
+    --destructive: 0 50% 50%;
+    --destructive-foreground: 264 0% 100%;
+    --border: 264 20% 82%;
+    --input: 264 20% 50%;
+    --ring: 264 100% 2.9%;
+    --radius: 1rem;
+  }
+
+  .dark {
+    --background: 264 10% 10%;
+    --foreground: 264 0% 100%;
+    --card: 264 0% 10%;
+    --card-foreground: 264 0% 100%;
+    --popover: 264 10% 5%;
+    --popover-foreground: 264 0% 100%;
+    --primary: 264 100% 2.9%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 264 10% 20%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 226 10% 25%;
+    --muted-foreground: 264 0% 65%;
+    --accent: 226 10% 25%;
+    --accent-foreground: 264 0% 95%;
+    --destructive: 0 50% 50%;
+    --destructive-foreground: 264 0% 100%;
+    --border: 264 20% 50%;
+    --input: 264 20% 50%;
+    --ring: 264 100% 2.9%;
+    --radius: 1rem;
+  }
+}
+
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 100vh;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  /* border-radius: 100vh; */
+  /* border: 3px solid #FFFFFF; */
+  background: transparent;
+}
+
+/* Handle on hover */
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
